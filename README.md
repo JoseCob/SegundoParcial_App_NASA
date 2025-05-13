@@ -43,6 +43,10 @@
 > Ejecuta el siguiente comando en la terminal con el directorio de la app, para una correcta instalacion exacta de la dependencia:
 - _`npx expo install formik yup`_
 
+### 11.- Dependencia necesaria para otorga acceso a valores de configuración de la app en tiempo de ejecución desde app.json
+> Ejecuta el siguiente comando en la terminal con el directorio de la app, para una correcta instalacion exacta de la dependencia:
+- _`npx expo install expo-constants`_
+
 ## - Intrucciones -
 Para usar todas estas dependencias en nuestro dispositivo, ejecute en la terminal estando ubicado la ruta principal del archivo:
 - _`npx expo install`_

@@ -1,0 +1,10 @@
+//Datos de la API que están en la sección ÁPODO
+export interface PictureOfTheDay {
+    date: string;
+    explanation: string;
+    hdurl: string;
+    media_type: string;
+    service_version: string;
+    title: string;
+    url: string;
+}

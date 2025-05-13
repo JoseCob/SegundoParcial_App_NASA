@@ -12,6 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "extra": {
+      "NASA_API_KEY": "12l8HPICgKsGyFxWvlF8rXgePHaRRQ3EfmKA4lCd"
+    },
     "ios": {
       "supportsTablet": true
     },
