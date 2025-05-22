@@ -4,7 +4,7 @@ import { PictureMarsRover } from '../../domain/models/PictureMarsRover';
 import { getPictureMarsRover } from '../../Data/repositories/pictureMarsRover';
 
 export const usePictureMRViewModel = () => {
-    const [isPictureMR, setPictureMR] = useState<PictureMarsRover | any>(null);
+    const [isPictureMR, setPictureMR] = useState<PictureMarsRover[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
 
     useEffect(()=> {
@@ -13,7 +13,6 @@ export const usePictureMRViewModel = () => {
             try{
                 const result = await getPictureMarsRover();
                 setPictureMR(result);
-                console.log(result);
             } catch (err){
                 console.log("Error al cargar los datos de las imagenes de Mars Rover", err)
             } finally{

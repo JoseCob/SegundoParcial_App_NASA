@@ -4,7 +4,7 @@ export const NASA_ENDPOINTS = {
     pictureOfTheDay: '/planetary/apod',
 
     //API 2 "Mars Rover Photos"
-    galleryMarsRover: '/curiosity/photos',
+    galleryMarsRover: '/mars-photos/api/v1/rovers/curiosity/photos',
 
     //API 3 "EPIC"
 
