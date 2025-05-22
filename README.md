@@ -62,4 +62,35 @@ Escribe lo siguiente en la consola/terminal, estando en la ruta raíz del proyec
 > En caso de seleccionar web presionando la tecla "w". Automaticamente se nos abrira el navegador predeterminado del sistema ejecutando nuestra app enfocado a web.
 
 ### Imagen de ejemplo de la terminal de windows, mostrando el menú para seleccionar el modo de renderización del proyecto
-![Expo_Go_Menu](https://github.com/user-attachments/assets/31784924-1b08-4004-9498-149573e7b692)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/31784924-1b08-4004-9498-149573e7b692"/>
+</p>
+
+## Imágenes del proyecto en web y móvil
+### Pantalla de carga
+![Captura de pantalla (582)](https://github.com/user-attachments/assets/511efd0d-7a02-48af-b7ac-2c6409ad5d25)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3d9f05a5-705d-40bf-bc1d-732c172eaa11" width="400" />
+</p>
+
+### Pantalla de Inicio
+![Captura de pantalla (583)](https://github.com/user-attachments/assets/99942b65-8a51-46a5-9f08-bb7b9aa1681a)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/527eb60a-c99c-4177-b720-0b1a5b231cdc" width="400" />
+</p>
+
+### Pantalla de API 1
+![Captura de pantalla (584)](https://github.com/user-attachments/assets/b9c9d87d-f3ef-479f-b0ea-8d0451a3845a)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bb2efb01-8a65-4f03-9736-af7de7ec32de" width="400" />
+</p>
+
+### Pantalla de API 2
+![Captura de pantalla (585)](https://github.com/user-attachments/assets/08db3d2d-ee23-4cbe-8277-9443b588752e)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a363af6b-3aad-4dc6-82cb-d868ccc01c4f" width="400" />
+</p>
