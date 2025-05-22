@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, FlatList } from "react-native";
-import { usePictureViewModel } from '../viewmodels/PictureViewModel';
+import { usePictureViewModel } from '../viewmodels/pictureViewModel';
 
 //Vista del API 1 "Imagen Astronómica del Día (ÁPODO)"
 const Api1 = () => {
