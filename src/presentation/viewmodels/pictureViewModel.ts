@@ -1,7 +1,7 @@
 //View Model para obtener los datos del EndPoint de PictureOfTheDay
 import { useState, useEffect } from 'react';
-import { getPictureOfTheDay } from '../../data/repositories/pictureOfTheDay';
 import { PictureOfTheDay } from '../../domain/models/PictureOfTheDay';
+import { getPictureOfTheDay } from '../../Data/repositories/pictureOfTheDay';
 
 export const usePictureViewModel = () => {
   const [picture, setPicture] = useState<PictureOfTheDay | any>(null);
@@ -13,9 +13,7 @@ export const usePictureViewModel = () => {
       setLoading(true);
       try{
         const result = await getPictureOfTheDay();
-        setPicture(result);
-        console.log(result);//Test para ver si carga los datos
-        
+        setPicture(result);        
       }catch(err){
         console.log("Error al cargar los datos", err);
       } finally{

@@ -3,16 +3,16 @@ export const NASA_ENDPOINTS = {
     //API 1 "Imagen Astronómica del Día (ÁPODO)"
     pictureOfTheDay: '/planetary/apod',
 
-    //API 2 ""
+    //API 2 "Mars Rover Photos"
+    galleryMarsRover: '/curiosity/photos',
+
+    //API 3 "EPIC"
 
 
-    //API 3 ""
+    //API 4 "EARTH"
 
 
-    //API 4 ""
-
-
-    //API 5 ""
-
+    //API 5 "Asteroids - NeoWs"
     
+  
 };

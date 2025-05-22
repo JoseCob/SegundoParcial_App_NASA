@@ -1,12 +1,11 @@
 import React from "react";
-import {View, Text, StyleSheet, Image, FlatList} from "react-native";
-import {usePictureViewModel} from '../../presentation/viewmodels/pictureViewModel';
+import { View, Text, StyleSheet, Image, FlatList } from "react-native";
+import { usePictureViewModel } from '../viewmodels/PictureViewModel';
 
 //Vista del API 1 "Imagen Astronómica del Día (ÁPODO)"
 const Api1 = () => {
-    const {picture, loading} = usePictureViewModel();
-
-    return(
+    const { picture, loading } = usePictureViewModel();
+    return (
         <>
             {loading ? (
                 <></>
@@ -14,14 +13,18 @@ const Api1 = () => {
                 <>
                     <View style={styles.container}>
                         <FlatList
-                            data = {picture}
-                            keyExtractor = {(item) => item.id.toString()}
-                            renderItem={({item}) => (
+                            data={[picture]} // Este es el picture transformado para 'ser un array'
+                            keyExtractor={(item) => item.date} // Usa un campo único como `date` si no hay `id`
+                            renderItem={({ item }) => (
                                 <View style={styles.contentFlat}>
-                                    <Image style={{width:100, height:100, marginBottom:8, resizeMode:'contain'}}
-                                        source={{uri: item.url}} 
+                                    <Text style={{ alignSelf: 'center', margin: 16, fontSize:35 }}>{item.date}</Text>
+                                    <Text style={{ alignSelf: 'center', textAlign:'center', margin: 6, fontSize:25, fontWeight:600 }}>{item.title}</Text>
+                                    <Image
+                                        style={{ width: 300, height: 300, marginBottom: 8, resizeMode: 'contain' }}
+                                        source={{ uri: item.url }}
                                     />
-                                    <Text style={{alignSelf: 'flex-start', margin:6}}>{item.explanation}</Text>
+                                    <Text style={{ alignSelf: 'center', marginLeft: 12, marginRight:12, fontSize:16 }}>{item.explanation}</Text>
+                                    
                                 </View>
                             )}
                         />
@@ -35,13 +38,13 @@ const Api1 = () => {
 };
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
         alignItems: 'center',
     },
-    contentFlat:{
+    contentFlat: {
         alignItems: 'center',
         padding: 4,
-        margin:8,
+        margin: 8,
     },
 });
 
