@@ -7,36 +7,32 @@ const Api2 = () =>{
     const {isPictureMR, loading} = usePictureMRViewModel();
 
     return(
-        <>
+        <View>
             {loading ? (
                 <View></View>
             ) : isPictureMR ? (
-                <>
-                    <View style={styles.container}>
-                        <FlatList
+                <View style={styles.container}>
+                    <FlatList
                         data= {isPictureMR}
                         keyExtractor = {(item) => item.id}
                         renderItem = {({item})=> (
-                            <>
-                                <View style={styles.contentFlat}>
-                                    <View style={{alignItems:'center'}}>
-                                        <Text style={styles.itemDate}>{item.earth_date}</Text>
-                                        <Text style={styles.itemSol}>Sol: {item.sol}</Text>
-                                        <Image 
-                                            source = {{uri: item.img_src}} 
-                                            style = {{width:300, height:300, marginBottom: 8, resizeMode: 'contain', borderRadius:25}}
-                                        />
-                                    </View>
+                            <View style={styles.contentFlat}>
+                                <View style={{alignItems:'center'}}>
+                                    <Text style={styles.itemDate}>{item.earth_date}</Text>
+                                    <Text style={styles.itemSol}>Sol: {item.sol}</Text>
+                                    <Image 
+                                        source = {{uri: item.img_src}} 
+                                        style = {{width:300, height:300, marginBottom: 8, resizeMode: 'contain', borderRadius:25}}
+                                    />
                                 </View>
-                            </>
+                            </View>
                         )}
-                        />
-                    </View>
-                </>
+                    />
+                </View>
             ) : (
                 <View></View>
             )}
-        </>
+        </View>
     );
 };
 
